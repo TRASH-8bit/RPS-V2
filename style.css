@@ -1,0 +1,301 @@
+body {
+    background-color: white;
+}
+
+#icons{
+    border-radius: 50%;
+}
+
+.navbar{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    border: blue;
+    border-width: 20px;
+    border-radius: 20px;
+}
+
+#text{
+    background-color: white;
+    position: absolute;
+    color:black;
+    margin-top: 20px;
+    margin-left: 35%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+#player{
+    text-align: center;
+    background-color: black;
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.button{
+    margin-top: 200px;
+    margin-left: 37%;
+}
+
+#rock{
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    margin-left: 20px;
+}
+#rock:hover{
+    animation: rockkey;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+}
+
+@keyframes rockkey {
+    from{
+        background-color: orange;
+        transform: scale(1);
+    }
+    to{
+        background-color: white;
+        transform: scale(1.3);
+    }
+}
+
+#paper{
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    margin-left: 50px;
+}
+#paper:hover{
+    animation: paperkey;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+}
+
+@keyframes paperkey {
+    from{
+        background-color: orange;
+        transform: scale(1);
+    }
+    to{
+        background-color: white;
+        transform: scale(1.3);
+    }
+}
+
+#scissors{
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    margin-left: 60px;
+}
+#scissors:hover{
+    animation: scissorskey;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+}
+
+@keyframes scissorskey {
+    from{
+        background-color: orange;
+        transform: scale(1);
+    }
+    to{
+        background-color: white;
+        transform: scale(1.3);
+    }
+}
+
+#console{
+    top: 250px;
+    left: 50px;
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+#consolecpu{
+    top: 250px;
+    right: 50px;
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+#winning{
+    top: 500px;
+    left: 40%;
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+@media (max-width:700px) {
+    
+    body {
+        background-color: white;
+    }
+    
+    #text{
+        background-color: white;
+        position: absolute;
+        color:black;
+        margin-top: 20px;
+        margin-left: 20%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+    }
+    
+    .button{
+        margin-top: 300px;
+        margin-left: 37%;
+    }
+    
+    #rock{
+        background-color: lightblue;
+        color: black;
+        border: none;
+        border-radius: 20px;
+        width: 90px;
+        height: 30px;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+
+    #rockimg{
+        position: absolute;
+        top: 20px;
+        left: 3px;
+    }
+
+    #rock:hover{
+        animation: rockkey;
+        animation-fill-mode: forwards;
+        animation-duration: 500ms;
+    }
+    
+    @keyframes rockkey {
+        from{
+            background-color: lightblue;
+            transform: scale(1);
+        }
+        to{
+            background-color: white;
+            transform: scale(1.3);
+        }
+    }
+    
+    #paper{
+        background-color: lightblue;
+        color: black;
+        border: none;
+        border-radius: 20px;
+        width: 90px;
+        height: 30px;
+        margin-left: 5px;
+        margin-top: 50px;
+    }
+
+    #paperimg{
+        position: absolute;
+        top: 97px;
+        left: 3px;
+    }
+
+    #paper:hover{
+        animation: paperkey;
+        animation-fill-mode: forwards;
+        animation-duration: 500ms;
+    }
+    
+    @keyframes paperkey {
+        from{
+            background-color: lightblue;
+            transform: scale(1);
+        }
+        to{
+            background-color: white;
+            transform: scale(1.3);
+        }
+    }
+    
+    #scissors{
+        background-color: lightblue;
+        color: black;
+        border: none;
+        border-radius: 20px;
+        width: 90px;
+        height: 30px;
+        margin-left: 5px;
+        margin-top: 55px;
+    }
+
+    #scissorsimg{
+        position: absolute;
+        top: 150px;
+        left: 3px;
+    }
+
+    #scissors:hover{
+        animation: scissorskey;
+        animation-fill-mode: forwards;
+        animation-duration: 500ms;
+    }
+    
+    @keyframes scissorskey {
+        from{
+            background-color: lightblue;
+            transform: scale(1);
+        }
+        to{
+            background-color: white;
+            transform: scale(1.3);
+        }
+    }
+    
+    #console{
+        top: 250px;
+        left: 50px;
+        position: absolute;
+        background-color: white;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+    
+    #consolecpu{
+        top: 300px;
+        left: 50px;
+        position: absolute;
+        background-color: white;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+    
+    #winning{
+        top: 340px;
+        left: 30%;
+        position: absolute;
+        background-color: white;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+    }
+}
